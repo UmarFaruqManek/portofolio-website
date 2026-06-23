@@ -2,11 +2,13 @@
 
 Portofolio website interaktif dengan pengalaman 3D imersif, smooth scroll, dan micro-animasi bertaraf Awwwards. Dibangun menggunakan Express.js, Three.js, GSAP, dan Lenis.
 
-## Screenshot
+## Tampilan Website
+
+**1. Halaman Utama — Hero Section dengan 3D Interactive Background**
+
+Three.js scene menampilkan torus knot berwarna amethyst dengan wireframe gold, geometric shapes berorbit, dan starfield. Tekstur glassmorphism pada card, gradient accent (purple → gold), dan custom cursor.
 
 ![Hero Section](screenshot-hero.png)
-![Full Page](screenshot-full.png)
-![Mobile View](screenshot-mobile.png)
 
 ## Fitur
 
