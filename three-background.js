@@ -2,16 +2,20 @@
     const container = document.getElementById('particles-canvas');
     if (!container || typeof THREE === 'undefined') return;
 
+    const isMobile = window.innerWidth < 768;
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (isMobile && prefersReduced) return;
+
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(isMobile ? 55 : 50, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({
         alpha: true,
-        antialias: true,
+        antialias: !isMobile,
         powerPreference: 'high-performance',
     });
 
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.2;
     renderer.domElement.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%';
@@ -91,7 +95,8 @@
 
     // ===== SECONDARY FLOATING SHAPES =====
     const floaters = [];
-    for (let i = 0; i < 30; i++) {
+    const floaterCount = isMobile ? 10 : 30;
+    for (let i = 0; i < floaterCount; i++) {
         const size = 0.05 + Math.random() * 0.15;
         const geo = new THREE.SphereGeometry(size, 8, 8);
         const mat = new THREE.MeshPhysicalMaterial({
@@ -117,7 +122,7 @@
     }
 
     // ===== STARFIELD =====
-    const starCount = 500;
+    const starCount = isMobile ? 150 : 500;
     const starPos = new Float32Array(starCount * 3);
     const starSizes = new Float32Array(starCount);
     for (let i = 0; i < starCount; i++) {
@@ -144,8 +149,9 @@
     scene.add(stars);
 
     // ===== AMBIENT CONNECTION LINES =====
+    const lineCount = isMobile ? 15 : 40;
     const linePoints = [];
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < lineCount; i++) {
         linePoints.push(
             (Math.random() - 0.5) * 12,
             (Math.random() - 0.5) * 12,

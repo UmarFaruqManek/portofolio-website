@@ -147,23 +147,45 @@ window.animateCounters = function () {
     const form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const btn = e.target.querySelector('.btn');
         const original = btn.innerHTML;
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         btn.disabled = true;
 
+        const data = {
+            name: document.getElementById('formName')?.value || '',
+            email: document.getElementById('formEmail')?.value || '',
+            subject: document.getElementById('formSubject')?.value || '',
+            message: document.getElementById('formMessage')?.value || '',
+        };
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+            const result = await res.json();
+            if (res.ok) {
+                btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                btn.style.background = 'linear-gradient(135deg, #7c5cfc, #d4a25a)';
+                form.reset();
+            } else {
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> ' + (result.error || 'Error');
+                btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
+            }
+        } catch {
+            btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Network Error';
+            btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
+        }
+
         setTimeout(() => {
-            btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-            btn.style.background = 'linear-gradient(135deg, #7c5cfc, #d4a25a)';
-            e.target.reset();
-            setTimeout(() => {
-                btn.innerHTML = original;
-                btn.style.background = '';
-                btn.disabled = false;
-            }, 3000);
-        }, 1500);
+            btn.innerHTML = original;
+            btn.style.background = '';
+            btn.disabled = false;
+        }, 4000);
     });
 })();
 

@@ -128,8 +128,12 @@ function renderProjects(data) {
     data.items.forEach((proj) => {
         const div = document.createElement('div');
         div.className = 'project-card';
+        const previewStyle = proj.image
+            ? `background: ${proj.previewBg}; background-image: url('${proj.image}'); background-size: cover; background-position: center;`
+            : `background: ${proj.previewBg};`;
         div.innerHTML = `
-            <div class="project-preview" style="background: ${proj.previewBg};">
+            <div class="project-preview" style="${previewStyle}">
+                ${proj.image ? `<img src="${proj.image}" alt="${proj.title}" style="display:none;" />` : ''}
                 <i class="${proj.icon} project-preview-icon"></i>
             </div>
             <div class="project-body">

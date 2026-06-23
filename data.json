@@ -120,70 +120,76 @@
     "items": [
       {
         "title": "DocuMind AI",
-        "description": "Enterprise RAG system that answers questions over 100,000+ document corpora with citation-backed responses and 95% accuracy. Features hybrid search, real-time streaming, and multi-modal document understanding.",
+        "image": "https://picsum.photos/seed/documind/600/400",
         "icon": "fas fa-robot",
         "previewBg": "linear-gradient(135deg, #667eea, #764ba2)",
+        "description": "Enterprise RAG system that answers questions over 100,000+ document corpora with citation-backed responses and 95% accuracy. Features hybrid search, real-time streaming, and multi-modal document understanding.",
         "tags": ["LLM", "RAG", "FastAPI", "LlamaIndex"],
         "links": [
-          { "icon": "fab fa-github", "label": "Source Code", "url": "#" },
-          { "icon": "fas fa-external-link-alt", "label": "Live Demo", "url": "#" },
-          { "icon": "fas fa-file-alt", "label": "Architecture", "url": "#" }
+          { "icon": "fab fa-github", "label": "Source Code", "url": "https://github.com/UmarFaruqManek" },
+          { "icon": "fas fa-external-link-alt", "label": "Live Demo", "url": "https://umarfaruqmanek.github.io" },
+          { "icon": "fas fa-file-alt", "label": "Architecture", "url": "https://github.com/UmarFaruqManek" }
         ]
       },
       {
         "title": "DefectNet",
-        "description": "Real-time manufacturing defect detection system running at 120 FPS on edge devices. Reduced false positive rates by 60% using novel attention mechanisms and knowledge distillation techniques.",
+        "image": "https://picsum.photos/seed/defectnet/600/400",
         "icon": "fas fa-eye",
         "previewBg": "linear-gradient(135deg, #f093fb, #f5576c)",
+        "description": "Real-time manufacturing defect detection system running at 120 FPS on edge devices. Reduced false positive rates by 60% using novel attention mechanisms and knowledge distillation techniques.",
         "tags": ["Computer Vision", "ONNX", "Docker", "TensorRT"],
         "links": [
-          { "icon": "fab fa-github", "label": "Source Code", "url": "#" },
-          { "icon": "fas fa-external-link-alt", "label": "Case Study", "url": "#" }
+          { "icon": "fab fa-github", "label": "Source Code", "url": "https://github.com/UmarFaruqManek" },
+          { "icon": "fas fa-external-link-alt", "label": "Case Study", "url": "https://github.com/UmarFaruqManek" }
         ]
       },
       {
         "title": "MolGraph",
-        "description": "Open-source library for molecular property prediction using graph neural networks. 2,000+ GitHub stars, adopted by 500+ researchers globally. Includes 20+ pretrained models and comprehensive documentation.",
+        "image": "https://picsum.photos/seed/molgraph/600/400",
         "icon": "fas fa-project-diagram",
         "previewBg": "linear-gradient(135deg, #4facfe, #00f2fe)",
+        "description": "Open-source library for molecular property prediction using graph neural networks. 2,000+ GitHub stars, adopted by 500+ researchers globally. Includes 20+ pretrained models and comprehensive documentation.",
         "tags": ["GNN", "PyTorch", "Research", "Open Source"],
         "links": [
-          { "icon": "fab fa-github", "label": "Source Code", "url": "#" },
-          { "icon": "fas fa-file-alt", "label": "Research Paper", "url": "#" },
-          { "icon": "fas fa-book", "label": "Documentation", "url": "#" }
+          { "icon": "fab fa-github", "label": "Source Code", "url": "https://github.com/UmarFaruqManek" },
+          { "icon": "fas fa-file-alt", "label": "Research Paper", "url": "https://github.com/UmarFaruqManek" },
+          { "icon": "fas fa-book", "label": "Documentation", "url": "https://github.com/UmarFaruqManek" }
         ]
       },
       {
         "title": "VoiceFlow",
-        "description": "Real-time speech transcription and translation system using Whisper and custom fine-tuned models. Supports 30+ languages with 98% accuracy and sub-200ms latency for live streaming.",
+        "image": "https://picsum.photos/seed/voiceflow/600/400",
         "icon": "fas fa-microphone-alt",
         "previewBg": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+        "description": "Real-time speech transcription and translation system using Whisper and custom fine-tuned models. Supports 30+ languages with 98% accuracy and sub-200ms latency for live streaming.",
         "tags": ["ASR", "Whisper", "NLP", "WebSocket"],
         "links": [
-          { "icon": "fab fa-github", "label": "Source Code", "url": "#" },
-          { "icon": "fas fa-external-link-alt", "label": "Live Demo", "url": "#" }
+          { "icon": "fab fa-github", "label": "Source Code", "url": "https://github.com/UmarFaruqManek" },
+          { "icon": "fas fa-external-link-alt", "label": "Live Demo", "url": "https://umarfaruqmanek.github.io" }
         ]
       },
       {
         "title": "OptiPrice",
-        "description": "Dynamic pricing engine using deep reinforcement learning and demand forecasting. Increased revenue by 23% for an e-commerce platform with 50,000+ products across 15 categories.",
+        "image": "https://picsum.photos/seed/optiprice/600/400",
         "icon": "fas fa-chart-line",
         "previewBg": "linear-gradient(135deg, #ffecd2, #fcb69f)",
+        "description": "Dynamic pricing engine using deep reinforcement learning and demand forecasting. Increased revenue by 23% for an e-commerce platform with 50,000+ products across 15 categories.",
         "tags": ["Reinforcement Learning", "Forecasting", "FastAPI", "Redis"],
         "links": [
-          { "icon": "fab fa-github", "label": "Source Code", "url": "#" },
-          { "icon": "fas fa-external-link-alt", "label": "Case Study", "url": "#" }
+          { "icon": "fab fa-github", "label": "Source Code", "url": "https://github.com/UmarFaruqManek" },
+          { "icon": "fas fa-external-link-alt", "label": "Case Study", "url": "https://github.com/UmarFaruqManek" }
         ]
       },
       {
         "title": "SecuraML",
-        "description": "Adversarial machine learning security toolkit for detecting and defending against model attacks. Includes model poisoning detection, gradient masking, and adversarial training pipelines.",
+        "image": "https://picsum.photos/seed/securaML/600/400",
         "icon": "fas fa-shield-alt",
         "previewBg": "linear-gradient(135deg, #13547a, #80d0c7)",
+        "description": "Adversarial machine learning security toolkit for detecting and defending against model attacks. Includes model poisoning detection, gradient masking, and adversarial training pipelines.",
         "tags": ["Security", "Adversarial ML", "Python", "Research"],
         "links": [
-          { "icon": "fab fa-github", "label": "Source Code", "url": "#" },
-          { "icon": "fas fa-file-alt", "label": "Technical Report", "url": "#" }
+          { "icon": "fab fa-github", "label": "Source Code", "url": "https://github.com/UmarFaruqManek" },
+          { "icon": "fas fa-file-alt", "label": "Technical Report", "url": "https://github.com/UmarFaruqManek" }
         ]
       }
     ]

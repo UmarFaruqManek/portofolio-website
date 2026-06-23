@@ -101,6 +101,31 @@ app.delete('/api/:section/:index', auth, (req, res) => {
     res.json({ message: 'Item deleted', data: data[section] });
 });
 
+// Contact form endpoint (must be before /api/:section to avoid auth)
+const CONTACT_FILE = path.join(__dirname, 'contact-messages.json');
+if (!fs.existsSync(CONTACT_FILE)) {
+    fs.writeFileSync(CONTACT_FILE, '[]', 'utf-8');
+}
+
+app.post('/api/contact', (req, res) => {
+    const { name, email, subject, message } = req.body;
+    if (!name || !email || !message) {
+        return res.status(400).json({ error: 'Name, email, and message are required' });
+    }
+    const entry = {
+        id: Date.now(),
+        name,
+        email,
+        subject: subject || '(no subject)',
+        message,
+        receivedAt: new Date().toISOString(),
+    };
+    const messages = JSON.parse(fs.readFileSync(CONTACT_FILE, 'utf-8'));
+    messages.push(entry);
+    fs.writeFileSync(CONTACT_FILE, JSON.stringify(messages, null, 2), 'utf-8');
+    res.json({ message: 'Message received. Thank you!' });
+});
+
 // Admin API: Add an item to array section
 app.post('/api/:section', auth, (req, res) => {
     const data = readData();

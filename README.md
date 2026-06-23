@@ -6,9 +6,11 @@ Portofolio website interaktif dengan pengalaman 3D imersif, smooth scroll, dan m
 
 **1. Halaman Utama — Hero Section dengan 3D Interactive Background**
 
-Three.js scene menampilkan torus knot berwarna amethyst dengan wireframe gold, geometric shapes berorbit, dan starfield. Tekstur glassmorphism pada card, gradient accent (purple → gold), dan custom cursor.
+Three.js scene menampilkan torus knot berwarna amethyst dengan wireframe gold, geometric shapes berorbit, dan starfield. Tekstur glassmorphism pada card, gradient accent (purple → gold), custom cursor, favicon, SEO meta tags, dan contact form real.
 
 ![Hero Section](screenshot-hero.png)
+
+> **Catatan:** Project preview images menggunakan [picsum.photos](https://picsum.photos) sebagai placeholder. Ganti dengan screenshot asli proyek kamu di `data.json` field `image`.
 
 ## Fitur
 
@@ -18,6 +20,11 @@ Three.js scene menampilkan torus knot berwarna amethyst dengan wireframe gold, g
 - **Micro-interactions** — Custom cursor, magnetic buttons, 3D tilt card, scroll progress bar, active nav tracking
 - **Split-text Hero** — Animasi karakter per baris dengan GSAP
 - **Admin Dashboard** — CRUD untuk semua konten (about, skills, experience, projects, contact, footer)
+- **Contact Form Real** — Data terkirim ke server dan tersimpan di `contact-messages.json`
+- **Project Images** — Preview proyek dengan gambar screenshot asli (dari picsum.photos) dengan fallback icon + gradient
+- **SEO Optimized** — Meta description, Open Graph, Twitter Card, JSON-LD structured data
+- **Favicon** — Icon custom untuk browser tab
+- **Performance Mobile** — Deteksi mobile otomatis: kurangi particle, nonaktifkan antialias, turunkan pixel ratio. Dukungan `prefers-reduced-motion`
 - **Fully Responsive** — Mobile-first, breakpoints di 1024px, 768px, 480px, 360px
 - **REST API** — Semua data dikelola via API endpoint dengan Basic Auth
 
