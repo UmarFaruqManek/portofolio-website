@@ -2,6 +2,12 @@
 
 Portofolio website interaktif dengan pengalaman 3D imersif, smooth scroll, dan micro-animasi bertaraf Awwwards. Dibangun menggunakan Express.js, Three.js, GSAP, dan Lenis.
 
+## Screenshot
+
+![Hero Section](screenshot-hero.png)
+![Full Page](screenshot-full.png)
+![Mobile View](screenshot-mobile.png)
+
 ## Fitur
 
 - **3D Scene Interaktif** — Torus knot + geometric shapes berorbit + starfield + efek parallax mouse
