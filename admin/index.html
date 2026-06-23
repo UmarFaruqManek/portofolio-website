@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+    <div id="loginScreen" class="login-screen">
+        <div class="login-card">
+            <div class="login-logo">AI.<span>dev</span></div>
+            <h2>Admin Login</h2>
+            <p>Enter your credentials to manage the portfolio</p>
+            <div class="login-form">
+                <div class="form-group">
+                    <input type="text" id="loginUser" placeholder="Username" value="admin" />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPass" placeholder="Password" value="admin123" />
+                </div>
+                <button id="loginBtn" class="btn btn-primary btn-full">
+                    <i class="fas fa-lock"></i> Login
+                </button>
+                <p id="loginError" class="login-error"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="dashboard" class="dashboard" style="display:none;">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>AI.<span>dev</span></h2>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a class="nav-item active" data-section="hero">
+                    <i class="fas fa-home"></i> Hero
+                </a>
+                <a class="nav-item" data-section="about">
+                    <i class="fas fa-user"></i> About
+                </a>
+                <a class="nav-item" data-section="skills">
+                    <i class="fas fa-code"></i> Skills
+                </a>
+                <a class="nav-item" data-section="experience">
+                    <i class="fas fa-briefcase"></i> Experience
+                </a>
+                <a class="nav-item" data-section="projects">
+                    <i class="fas fa-project-diagram"></i> Projects
+                </a>
+                <a class="nav-item" data-section="contact">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                <a class="nav-item" data-section="footer">
+                    <i class="fas fa-edit"></i> Footer
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="http://localhost:3000" target="_blank" class="btn btn-outline btn-sm">
+                    <i class="fas fa-external-link-alt"></i> View Site
+                </a>
+                <button id="logoutBtn" class="btn btn-outline btn-sm">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h1 id="sectionTitle">Hero Section</h1>
+                <span class="section-status" id="sectionStatus">Loaded</span>
+            </header>
+
+            <div class="content-body" id="contentBody">
+                <div class="loading">Loading section data...</div>
+            </div>
+
+            <footer class="content-footer">
+                <button id="saveBtn" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Save Changes
+                </button>
+                <span id="saveMessage" class="save-message"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

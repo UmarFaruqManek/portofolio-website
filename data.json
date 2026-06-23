@@ -1,0 +1,222 @@
+{
+  "hero": {
+    "badge": "AI Engineer",
+    "title": "Building\nIntelligent\nSystems That Learn",
+    "subtitle": "I design and deploy machine learning models that solve real-world problems at scale. Specializing in NLP, computer vision, and production AI systems with 5+ years of industry experience.",
+    "btn1Text": "View Projects",
+    "btn2Text": "Contact Me",
+    "stats": [
+      { "label": "Years Exp", "value": 5 },
+      { "label": "Projects", "value": 18 },
+      { "label": "Publications", "value": 8 },
+      { "label": "GitHub Stars", "value": 4200 }
+    ]
+  },
+  "about": {
+    "tag": "About Me",
+    "title": "Transforming Data into <span class=\"gradient-text\">Intelligence</span>",
+    "cards": [
+      {
+        "icon": "fas fa-brain",
+        "title": "Deep Learning",
+        "description": "Expertise in designing custom neural architectures for complex pattern recognition and prediction tasks using PyTorch and TensorFlow. Experienced with transformers, GNNs, and diffusion models."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "MLOps & Production",
+        "description": "End-to-end pipeline orchestration, model serving, monitoring, and A/B testing at scale using Docker, Kubernetes, MLflow, and custom CI/CD pipelines for ML systems."
+      },
+      {
+        "icon": "fas fa-microchip",
+        "title": "LLMs & Gen AI",
+        "description": "Fine-tuning and deploying large language models, RAG pipelines, and generative AI solutions for enterprise applications. Built production systems serving 2M+ users."
+      },
+      {
+        "icon": "fas fa-cloud-upload-alt",
+        "title": "Cloud Architecture",
+        "description": "Multi-cloud ML infrastructure design on AWS SageMaker, GCP Vertex AI, and Azure ML. Cost-optimized training and inference at scale with spot instances and auto-scaling."
+      },
+      {
+        "icon": "fas fa-flask",
+        "title": "Research & Innovation",
+        "description": "Published at NeurIPS, ICML, and ICLR. Open-source contributor with 4K+ cumulative GitHub stars. Passionate about bridging research breakthroughs to production systems."
+      },
+      {
+        "icon": "fas fa-users",
+        "title": "Leadership & Mentoring",
+        "description": "Led cross-functional teams of ML engineers and researchers. Founded local AI meetup group with 500+ members. Mentored 10+ junior engineers through career transitions."
+      }
+    ]
+  },
+  "skills": {
+    "tag": "Tech Stack",
+    "title": "Tools & <span class=\"gradient-text\">Technologies</span>",
+    "categories": [
+      {
+        "name": "Languages",
+        "icon": "fas fa-code",
+        "items": ["Python", "TypeScript", "Rust", "SQL", "C++", "Go", "Julia"]
+      },
+      {
+        "name": "ML / DL Frameworks",
+        "icon": "fas fa-robot",
+        "items": ["PyTorch", "TensorFlow", "JAX", "scikit-learn", "XGBoost", "LightGBM", "Hugging Face Transformers"]
+      },
+      {
+        "name": "LLM & Gen AI",
+        "icon": "fas fa-comment-dots",
+        "items": ["OpenAI API", "LangChain", "LlamaIndex", "RAG", "Fine-tuning", "LoRA/QLoRA", "vLLM", "Ollama"]
+      },
+      {
+        "name": "MLOps & Cloud",
+        "icon": "fas fa-cloud",
+        "items": ["Docker", "Kubernetes", "AWS SageMaker", "GCP Vertex AI", "MLflow", "Terraform", "FastAPI", "Apache Airflow"]
+      },
+      {
+        "name": "Computer Vision",
+        "icon": "fas fa-eye",
+        "items": ["OpenCV", "YOLO", "Detectron2", "ONNX", "TensorRT", "CLIP", "Stable Diffusion"]
+      },
+      {
+        "name": "Data & Tools",
+        "icon": "fas fa-database",
+        "items": ["PostgreSQL", "Redis", "MongoDB", "Apache Spark", "Kafka", "Weights & Biases", "Git", "Jupyter"]
+      }
+    ]
+  },
+  "experience": {
+    "tag": "Career",
+    "title": "Professional <span class=\"gradient-text\">Journey</span>",
+    "items": [
+      {
+        "date": "2024 - Present",
+        "role": "Senior AI Engineer",
+        "company": "TechCorp AI · San Francisco, CA",
+        "description": "Leading development of LLM-powered products serving 2M+ users. Designed RAG architecture reducing hallucination by 40%. Mentoring team of 4 engineers. Deployed fine-tuned Llama 3 models for enterprise document analysis."
+      },
+      {
+        "date": "2022 - 2024",
+        "role": "Machine Learning Engineer",
+        "company": "DataSphere Inc. · Remote",
+        "description": "Built real-time fraud detection system processing 50K+ events/sec with 99.7% accuracy. Developed custom computer vision pipeline for automated quality inspection. Reduced inference cost by 60% via model quantization."
+      },
+      {
+        "date": "2020 - 2022",
+        "role": "AI Researcher",
+        "company": "NeuraLab · Berlin, Germany",
+        "description": "Published 3 papers at NeurIPS and ICML on graph neural networks. Developed open-source library MolGraph for molecular property prediction (2K+ stars). Built foundational models for drug discovery applications."
+      },
+      {
+        "date": "2019 - 2020",
+        "role": "Data Scientist",
+        "company": "StartupX · Jakarta, Indonesia",
+        "description": "Built recommendation engine improving user engagement by 35%. Deployed NLP pipeline for multilingual customer support automation across 8 languages. Implemented A/B testing framework for model evaluation."
+      }
+    ]
+  },
+  "projects": {
+    "tag": "Portfolio",
+    "title": "Featured <span class=\"gradient-text\">Projects</span>",
+    "items": [
+      {
+        "title": "DocuMind AI",
+        "description": "Enterprise RAG system that answers questions over 100K+ document corpora with citation-backed responses and 95% accuracy. Features hybrid search, real-time streaming, and multi-modal support.",
+        "icon": "fas fa-robot",
+        "previewBg": "linear-gradient(135deg, #667eea, #764ba2)",
+        "tags": ["LLM", "RAG", "FastAPI", "LlamaIndex"],
+        "links": [
+          { "icon": "fab fa-github", "label": "Source", "url": "#" },
+          { "icon": "fas fa-external-link-alt", "label": "Live Demo", "url": "#" },
+          { "icon": "fas fa-file-alt", "label": "Architecture", "url": "#" }
+        ]
+      },
+      {
+        "title": "DefectNet",
+        "description": "Real-time manufacturing defect detection system running at 120 FPS on edge devices. Reduced false positives by 60% using novel attention mechanisms and knowledge distillation.",
+        "icon": "fas fa-eye",
+        "previewBg": "linear-gradient(135deg, #f093fb, #f5576c)",
+        "tags": ["Computer Vision", "ONNX", "Docker", "TensorRT"],
+        "links": [
+          { "icon": "fab fa-github", "label": "Source", "url": "#" },
+          { "icon": "fas fa-external-link-alt", "label": "Case Study", "url": "#" }
+        ]
+      },
+      {
+        "title": "MolGraph",
+        "description": "Open-source library for molecular property prediction using graph neural networks. 2K+ GitHub stars, used by 500+ researchers worldwide. Includes 20+ pretrained models.",
+        "icon": "fas fa-chart-network",
+        "previewBg": "linear-gradient(135deg, #4facfe, #00f2fe)",
+        "tags": ["GNN", "PyTorch", "Research", "Open Source"],
+        "links": [
+          { "icon": "fab fa-github", "label": "Source", "url": "#" },
+          { "icon": "fas fa-file-alt", "label": "Paper", "url": "#" },
+          { "icon": "fas fa-book", "label": "Docs", "url": "#" }
+        ]
+      },
+      {
+        "title": "VoiceFlow",
+        "description": "Real-time speech transcription and translation system leveraging Whisper and custom fine-tuned models. Supports 30+ languages with 98% accuracy and sub-200ms latency.",
+        "icon": "fas fa-microphone-alt",
+        "previewBg": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+        "tags": ["ASR", "Whisper", "NLP", "WebSocket"],
+        "links": [
+          { "icon": "fab fa-github", "label": "Source", "url": "#" },
+          { "icon": "fas fa-external-link-alt", "label": "Live Demo", "url": "#" }
+        ]
+      },
+      {
+        "title": "OptiPrice",
+        "description": "Dynamic pricing engine using reinforcement learning and demand forecasting. Increased revenue by 23% for an e-commerce platform with 50K+ products across 15 categories.",
+        "icon": "fas fa-chart-line",
+        "previewBg": "linear-gradient(135deg, #ffecd2, #fcb69f)",
+        "tags": ["RL", "Forecasting", "FastAPI", "Redis"],
+        "links": [
+          { "icon": "fab fa-github", "label": "Source", "url": "#" },
+          { "icon": "fas fa-external-link-alt", "label": "Case Study", "url": "#" }
+        ]
+      },
+      {
+        "title": "SecuraML",
+        "description": "Adversarial ML security toolkit for detecting and defending against model attacks. Includes model poisoning detection, gradient masking, and adversarial training pipelines.",
+        "icon": "fas fa-shield-alt",
+        "previewBg": "linear-gradient(135deg, #13547a, #80d0c7)",
+        "tags": ["Security", "Adversarial ML", "Python", "Research"],
+        "links": [
+          { "icon": "fab fa-github", "label": "Source", "url": "#" },
+          { "icon": "fas fa-file-alt", "label": "Whitepaper", "url": "#" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "tag": "Get in Touch",
+    "title": "Let's Build Something <span class=\"gradient-text\">Intelligent</span>",
+    "items": [
+      { "icon": "fas fa-envelope", "label": "Email", "value": "hello@ai-engineer.dev" },
+      { "icon": "fas fa-phone-alt", "label": "Phone", "value": "+1 (415) 555-0192" },
+      { "icon": "fas fa-map-marker-alt", "label": "Location", "value": "San Francisco, CA" },
+      { "icon": "fab fa-github", "label": "GitHub", "value": "github.com/aiengineer" },
+      { "icon": "fab fa-linkedin", "label": "LinkedIn", "value": "linkedin.com/in/aiengineer" },
+      { "icon": "fab fa-x-twitter", "label": "X / Twitter", "value": "@aiengineer" }
+    ]
+  },
+  "footer": {
+    "logo": "AI.<span>dev</span>",
+    "tagline": "Building the future, one model at a time.",
+    "copyright": "© 2026 AI Engineer. All rights reserved.",
+    "links": [
+      { "label": "About", "url": "#about" },
+      { "label": "Skills", "url": "#skills" },
+      { "label": "Experience", "url": "#experience" },
+      { "label": "Projects", "url": "#projects" },
+      { "label": "Contact", "url": "#contact" }
+    ],
+    "social": [
+      { "icon": "fab fa-github", "url": "https://github.com/aiengineer" },
+      { "icon": "fab fa-linkedin", "url": "https://linkedin.com/in/aiengineer" },
+      { "icon": "fab fa-x-twitter", "url": "https://x.com/aiengineer" },
+      { "icon": "fab fa-medium", "url": "https://medium.com/@aiengineer" },
+      { "icon": "fab fa-youtube", "url": "https://youtube.com/@aiengineer" }
+    ]
+  }
+}

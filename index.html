@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">AI Engineer | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Initializing</div>
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="scroll-progress"></div>
+
+    <div id="particles-canvas"></div>
+
+    <button id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AI.<span>dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- HERO -->
+        <section class="section-hero" id="hero" data-section>
+            <div class="hero-content">
+                <span class="hero-badge" id="heroBadge">AI Engineer</span>
+                <h1 class="hero-title" id="heroTitle">
+                    <span class="line"><span>Building</span></span>
+                    <span class="line"><span>Intelligent</span></span>
+                    <span class="line gradient-text"><span>Systems That Learn</span></span>
+                </h1>
+                <p class="hero-subtitle" id="heroSubtitle">
+                    I design and deploy machine learning models that solve real-world problems
+                    at scale. Specializing in NLP, computer vision, and production AI systems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" data-magnetic>
+                        <i class="fas fa-rocket"></i> <span>View Projects</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline" data-magnetic>
+                        <i class="fas fa-envelope"></i> <span>Contact Me</span>
+                    </a>
+                </div>
+                <div class="hero-stats" id="heroStats"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about" data-section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" id="aboutTag">About Me</span>
+                    <h2 class="section-title" id="aboutTitle">Transforming Data into <span class="gradient-text">Intelligence</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-grid" id="aboutGrid"></div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section section-skills" id="skills" data-section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" id="skillsTag">Tech Stack</span>
+                    <h2 class="section-title" id="skillsTitle">Tools & <span class="gradient-text">Technologies</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-grid" id="skillsGrid"></div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section" id="experience" data-section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" id="expTag">Career</span>
+                    <h2 class="section-title" id="expTitle">Professional <span class="gradient-text">Journey</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="timeline" id="timeline"></div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section section-projects" id="projects" data-section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" id="projectsTag">Portfolio</span>
+                    <h2 class="section-title" id="projectsTitle">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="projects-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact" data-section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" id="contactTag">Get in Touch</span>
+                    <h2 class="section-title" id="contactTitle">Let's Build Something <span class="gradient-text">Intelligent</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info" id="contactInfo"></div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="formName" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="formEmail" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="formSubject" placeholder="Subject" />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-magnetic>
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo" id="footerLogo">AI.<span>dev</span></a>
+                    <p id="footerTagline">Building the future, one model at a time.</p>
+                </div>
+                <div class="footer-links" id="footerLinks"></div>
+                <div class="footer-social" id="footerSocial"></div>
+            </div>
+            <div class="footer-bottom">
+                <p id="footerCopyright">&copy; 2026 AI Engineer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script src="three-background.js"></script>
+    <script src="api-loader.js"></script>
+</body>
+</html>
